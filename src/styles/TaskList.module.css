@@ -1,0 +1,144 @@
+.task-list-container {
+    padding: 20px 0;
+    margin: 0 auto;
+}
+
+.task-list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.task-list-controls {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar {
+    padding: 8px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+}
+
+.button {
+    padding: 6px 12px !important;
+    font-size: inherit;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.table-view {
+    display: block;
+}
+
+.task-list-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.task-list-table th,
+.task-list-table td {
+    padding: 12px;
+    border: 1px solid #dee2e6;
+    text-align: left;
+}
+
+.task-list-table th {
+    background-color: #f8f9fa;
+    cursor: pointer;
+}
+
+.task-list-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.card-view {
+    display: none;
+}
+
+.task-card {
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.task-card h3 {
+    margin-top: 0;
+}
+
+.card-actions {
+    margin-top: 10px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination-button {
+    padding: 8px 12px;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    background-color: #ffffff;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.pagination-button.active {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+.confirm-button,
+.cancel-button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.confirm-button {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+.confirm-button:hover {
+    background-color: #0056b3;
+}
+
+.cancel-button {
+    background-color: #6c757d;
+    color: #ffffff;
+}
+
+.cancel-button:hover {
+    background-color: #5a6268;
+}
+
+@media (max-width: 768px) {
+    .table-view {
+        display: none;
+    }
+
+    .card-view {
+        display: block;
+    }
+}
+
+@media (min-width: 769px) {
+    .card-view {
+        display: none;
+    }
+
+    .table-view {
+        display: block;
+    }
+}

@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
-
+import { BrowserRouter as Router,Route, Routes } from "react-router-dom";
+import Login from "./pages/user/Login";
+import Signup from "./pages/user/Signup";
+import TaskList from "./pages/task/TaskList";
+import LoginSignupPage from "./pages/user/LoginSignupPage";
+import PageNotFound from "./pages/PageNotFound";
+import CreateTask from "./pages/task/CreateTask";
+import { Footer, Header } from './components/Index';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+      <Header/>
+        <Routes>
+          <Route path='/' element={<LoginSignupPage Page={Login}/>} />
+          <Route path='/signup' element={<LoginSignupPage Page={Signup}/>}/>
+          <Route path='/list' element={<TaskList/>}/>
+          <Route path='/edit-task/:id' element={<CreateTask/>}/>
+          <Route path='/add-task' element={<CreateTask/>}/>
+          <Route path='*' element={<PageNotFound/>}/>
+        </Routes>
+        <Footer/>
+      </Router>
     </div>
   );
 }

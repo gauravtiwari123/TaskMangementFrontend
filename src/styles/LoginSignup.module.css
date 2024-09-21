@@ -1,0 +1,55 @@
+/* Container styling */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center horizontally */
+    height: 88vh;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Layout for larger screens (desktop) */
+.page-img, .page-content {
+    width: 50%;
+}
+
+.logo-image {
+    display: block;
+    margin: auto;
+}
+
+/* Responsive design for tablets and mobile screens */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack the content vertically */
+        justify-content: center; /* Center the content vertically */
+        background-image: url('./../assets/images/Login_Logo.webp');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh; /* Ensure full height on mobile */
+    }
+
+    .page-img {
+        display: none; /* Hide the image container */
+    }
+
+    .page-content {
+        width: 98%; /* Make the content take up 98% of the screen */
+        background-color: rgba(255, 255, 255, 0.8); /* Optional: Add a semi-transparent background for readability */
+        padding: 20px;
+        border-radius: 8px; /* Add rounded corners */
+        opacity: .9;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Center the content inside the box */
+        align-items: center; /* Center horizontally */
+    }
+}
+
+@media (max-width: 480px) {
+    .page-content {
+        width: 98%; /* Still 98% width for mobile */
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+}

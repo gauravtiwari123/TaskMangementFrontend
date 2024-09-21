@@ -1,0 +1,29 @@
+/* Basic styling for the input component */
+.input-container {
+    margin: 10px 0; /* Space around the input container */
+    width: 100%; /* Full width of the parent container */
+}
+
+input {
+    width: 100%; /* Full width of the container */
+    padding: 10px; /* Space inside the input */
+    border: 1px solid #ced4da; /* Border color */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 16px; /* Font size for readability */
+    box-sizing: border-box; /* Includes padding and border in the element's width and height */
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    input {
+        font-size: 14px; 
+        padding: 8px;
+    }
+}
+
+@media (max-width: 400px) {
+    input {
+        font-size: 12px;
+        padding: 6px;
+    }
+}

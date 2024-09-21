@@ -1,0 +1,115 @@
+.table-container {
+    margin: 10px;
+    width: calc(100% - 20px);
+
+  }
+  
+  .search-filter-container {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .search-input,
+  .status-filter {
+    padding: 8px;
+    font-size: 16px;
+    max-width: 400px;
+    min-width: 250px;
+  }
+  
+  .custom-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+  }
+  
+  .custom-table th,
+  .custom-table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  .custom-table th {
+    cursor: pointer;
+    background-color: #f4f4f4;
+  }
+  
+  .custom-table th span {
+    margin-left: 5px;
+  }
+  
+  .custom-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .custom-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .card-view {
+    display: none; /* Hidden by default */
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-row {
+    margin-bottom: 8px;
+  }
+  
+  .card-actions {
+    text-align: right;
+  }
+  
+  @media (max-width: 768px) {
+    .search-filter-container {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .custom-table {
+      display: none;
+    }
+  
+    .card-view {
+      display: block;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .search-filter-container {
+      flex-direction: column;
+      align-items: flex-end;
+      max-width: calc(100% - 20px);
+      min-width: calc(100% - 20px);
+    }
+  }
+  
+  .pagination-controls {
+    margin-top: 15px;
+    text-align: right;
+  }
+  
+  .pagination-controls button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    cursor: pointer;
+  }
+  
+  .pagination-controls button.active {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .pagination-controls button:hover {
+    background-color: #e9e9e9;
+  }
+  

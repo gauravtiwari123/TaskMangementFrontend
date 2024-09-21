@@ -1,0 +1,16 @@
+.custom-textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: none;
+    outline: none;
+    transition: border-color 0.2s ease-in-out;
+  }
+  
+  .custom-textarea:focus {
+    border-color: #007bff; 
+  }
+  
